@@ -90,6 +90,16 @@ func mergeConfig(first, second Config) Config {
 	if second.Global.Colors.Muted != "" {
 		first.Global.Colors.Muted = second.Global.Colors.Muted
 	}
+	if len(second.Calendar.Paths) > 0 {
+		first.Calendar.Paths = second.Calendar.Paths
+	}
+	if second.Calendar.DefaultView != "" {
+		first.Calendar.DefaultView = second.Calendar.DefaultView
+	}
+	if second.Calendar.SidebarWidth != 0 {
+		first.Calendar.SidebarWidth = second.Calendar.SidebarWidth
+	}
+
 	return first
 }
 
