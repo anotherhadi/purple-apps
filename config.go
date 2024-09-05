@@ -34,7 +34,7 @@ global:
     muted: "#202022"
 calendar:
   paths:
-    - "$HOME/calendar"
+    - "$HOME/calendar.md"
   default_view: "month"
   sidebar_width: 25
   `

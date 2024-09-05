@@ -9,5 +9,5 @@ var (
 	OddRowStyle     = CellStyle.Foreground(gray).Align(lipgloss.Center)
 	EvenRowStyle    = CellStyle.Foreground(lightgray).Align(lipgloss.Center)
 	BorderStyle     = lipgloss.NewStyle().Foreground(accent)
-	CellHoverStyle  = lipgloss.NewStyle().Background(accent).Foreground(GetFgColor(accent))
+	CellHoverStyle  = lipgloss.NewStyle().Foreground(accent).Bold(true).Underline(true)
 )
