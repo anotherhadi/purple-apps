@@ -8,9 +8,10 @@ import (
 
 var (
 	config    = GetConfig()
-	accent    = lipgloss.Color(config.Global.Colors.Accent)
-	gray      = lipgloss.Color(config.Global.Colors.Gray)
-	lightgray = lipgloss.Color(config.Global.Colors.LightGray)
+	Accent    = lipgloss.Color(config.Global.Colors.Accent)
+	Gray      = lipgloss.Color(config.Global.Colors.Gray)
+	Lightgray = lipgloss.Color(config.Global.Colors.LightGray)
+	Muted     = lipgloss.Color(config.Global.Colors.Muted)
 )
 
 func relativeLuminance(r, g, b uint32) float64 {
