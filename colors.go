@@ -6,12 +6,20 @@ import (
 	"github.com/charmbracelet/lipgloss"
 )
 
+type colors struct {
+	Accent    lipgloss.Color
+	Gray      lipgloss.Color
+	LightGray lipgloss.Color
+	Muted     lipgloss.Color
+}
+
 var (
-	config    = GetConfig()
-	Accent    = lipgloss.Color(config.Global.Colors.Accent)
-	Gray      = lipgloss.Color(config.Global.Colors.Gray)
-	Lightgray = lipgloss.Color(config.Global.Colors.LightGray)
-	Muted     = lipgloss.Color(config.Global.Colors.Muted)
+	Colors = colors{
+		Accent:    lipgloss.Color(Config.Global.Colors.Accent),
+		Gray:      lipgloss.Color(Config.Global.Colors.Gray),
+		LightGray: lipgloss.Color(Config.Global.Colors.LightGray),
+		Muted:     lipgloss.Color(Config.Global.Colors.Muted),
+	}
 )
 
 func relativeLuminance(r, g, b uint32) float64 {

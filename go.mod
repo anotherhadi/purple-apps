@@ -3,6 +3,7 @@ module github.com/anotherhadi/purple-apps
 go 1.22.5
 
 require (
+	dario.cat/mergo v1.0.1
 	github.com/charmbracelet/lipgloss v0.13.0
 	gopkg.in/yaml.v3 v3.0.1
 )
