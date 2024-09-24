@@ -29,8 +29,8 @@ var (
 global:
   colors:
     accent: "#A594FD"
-    gray: "245"
-    lightgray: "241"
+    gray: "#2A2A2C"
+    lightgray: "#3A3A3C"
     muted: "#202022"
 calendar:
   paths:
