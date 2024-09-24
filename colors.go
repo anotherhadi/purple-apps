@@ -36,7 +36,7 @@ func GetFgColor(backgroundColor lipgloss.Color) lipgloss.Color {
 	r, g, b, _ := backgroundColor.RGBA()
 	// luminance := relativeLuminance(r, g, b)
 	mean := int((r + g + b) / 3)
-	if mean < 127 {
+	if mean < 32768 {
 		return lipgloss.Color("#FFFFFF")
 	} else {
 		return lipgloss.Color("#000000")
