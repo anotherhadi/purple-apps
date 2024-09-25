@@ -24,6 +24,7 @@ type config struct {
 	}
 	Pomodoro struct {
 		Path           string `yaml:"path"`
+		StartView      string `yaml:"start_view"`
 		Amount         int    `yaml:"amount"`
 		WorkTime       int    `yaml:"work_time"`
 		ShortPauseTime int    `yaml:"short_pause_time"`
@@ -45,6 +46,7 @@ calendar:
   default_view: "month"
 pomodoro:
   path: "/tmp/pomodoro"
+  start_view: "start"
   amount: 4
   work_time: 25
   short_pause_time: 5
