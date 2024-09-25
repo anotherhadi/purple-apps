@@ -22,6 +22,13 @@ type config struct {
 		Paths       []string `yaml:"paths"`
 		DefaultView string   `yaml:"default_view"`
 	}
+	Pomodoro struct {
+		Path           string `yaml:"path"`
+		Amount         int    `yaml:"amount"`
+		WorkTime       int    `yaml:"work_time"`
+		ShortPauseTime int    `yaml:"short_pause_time"`
+		LongPauseTime  int    `yaml:"long_pause_time"`
+	}
 }
 
 var (
@@ -36,6 +43,12 @@ calendar:
   paths:
     - "$HOME/calendar.md"
   default_view: "month"
+pomodoro:
+  path: "/tmp/pomodoro"
+  amount: 4
+  work_time: 25
+  short_pause_time: 5
+  long_pause_time: 15
   `
 	Config = getConfig()
 )
